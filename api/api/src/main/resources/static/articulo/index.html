@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historias para no dormir</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/apiFunctions.js"></script>
+    </head>
+
+    <body id="grid-body">
+        <header>
+            <h1>Historias para no dormir</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/articulo/index.html">Artículos</a></li>
+                    <li><a href="/perfil/index.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="articulo">
+                
+            </article>
+        </main>
+
+        <section id="comment-section">
+            <h2>Comentarios</h2>
+            <div id="comments"></div>
+
+            <form id="my-comment-form">
+                <img id="my-comment-photo"
+                    src="https://img.freepik.com/free-icon/user_318-159711.jpg">
+                <textarea id="my-comment-area" placeholder="Escribe un comentario..."></textarea>
+                <button type="button" id="my-comment-button" onclick="enviarComentario()">Enviar</button>
+                <div id="my-comment-error" class="error"></div>
+            </form>
+        </section>
+
+        <aside id="other">
+            <h2>Últimos artículos</h2>
+            <ul id="latest-articles">
+            </ul>
+        </aside>
+
+        <footer>
+            <p>&copy; 2023 Historias para no dormir. Todos los derechos
+                reservados.</p>
+        </footer>
+            
+        <script src="/js/fixFooter.js"></script>
+        <script src="/js/articulo.js"></script>
+        <script src="/js/articleList.js"></script>
+        </body>
+
+    </html>

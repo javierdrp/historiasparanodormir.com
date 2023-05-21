@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historias para no dormir</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/apiFunctions.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Historias para no dormir</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/articulo/index.html">Artículos</a></li>
+                    <li><a href="/perfil/index.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="my-profile-section">
+            <img src="https://img.freepik.com/free-icon/user_318-159711.jpg"
+                id="my-profile-photo" onclick="formFoto()">
+            <br>
+            Nombre de usuario: <b class="select-cursor" id="my-profile-name"
+                onclick="formNombre()"></b>
+            <br>
+            Email: <b id="my-profile-email"></b>
+            <br>
+            <b class="select-cursor" onclick="formContrasena()">Cambiar
+                contraseña</b>
+            <br>
+            <b class="select-cursor" id="select-admin" onclick="formAdmin()">Nuevo artículo</b>
+            <b class="select-cursor" onclick="cerrarSesion()">Cerrar sesión</b>
+        </section>
+
+        <form id="my-profile-form">
+            <div id="change-username-form">
+                <label for="field-username">Cambiar el nombre de usuario:
+                </label>
+                <input id="field-username">
+                <br>
+                <button type="button" id="change-username-button"
+                    onclick="cambiarNombre()">Cambiar</button>
+                <br>
+                <div id="change-username-error" class="error"></div>
+            </div>
+            <div id="change-photo-form">
+                <label for="field-photo">Enlace a la nueva foto de perfil:
+                </label>
+                <input id="field-photo">
+                <br>
+                <button type="button" id="change-photo-button"
+                    onclick="cambiarFoto()">Cambiar</button>
+                <br>
+                <div id="change-photo-error" class="error"></div>
+            </div>
+            <div id="change-pass-form">
+                <label for="field-oldpass">Contraseña actual:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input id="field-oldpass" type="password">
+                <br>
+                <label for="field-newpass">Nueva contraseña:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input id="field-newpass" type="password">
+                <br>
+                <label for="field-confirmpass">Repetir nueva contraseña:&nbsp;</label>
+                <input id="field-confirmpass" type="password">
+                <br>
+                <button type="button" id="change-pass-button"
+                    onclick="cambiarContrasena()">Cambiar</button>
+                <br>
+                <div id="change-pass-error" class="error"></div>
+            </div>
+        </form>
+
+        <form id="admin-form">
+            <h4>Escribir un artículo</h4>
+            <input id="admin-title" placeholder="Título...">
+            <br>
+            <textarea id="admin-content" placeholder="Contenido"></textarea>
+            <br>
+            <button type="button" id="admin-submit" onclick="subirArticulo()">Subir artículo</button>
+            <br>
+            <div id="admin-error" class="error"></div>
+        </form>
+
+        <footer>
+            <p>&copy; 2023 Historias para no dormir. Todos los derechos
+                reservados.</p>
+        </footer>
+
+        <script src="/js/fixFooter.js"></script>
+        <script src="/js/perfil.js"></script>
+    </body>
+
+</html>

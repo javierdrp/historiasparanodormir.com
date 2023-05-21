@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historias para no dormir</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/apiFunctions.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Historias para no dormir</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/articulo/index.html">Artículos</a></li>
+                    <li><a href="/perfil/index.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form class="login-form">
+            <label for="login-email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" id="login-email">
+            <br>
+            <label for="login-pass">Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="password" id="login-pass">
+            <br>
+            <label for="login-passconfirm">Confirmar contraseña&nbsp;</label>
+            <input type="password" id="login-passconfirm">
+            <br>
+            <button type="button" id="login-button">Crear</button>
+            <div id="login-error" class="error"></div>
+            ¿Ya tienes una cuenta? <a href="/perfil/acceso/index.html">Inicia sesión</a>
+        </form>
+
+        <footer class="fixed-footer">
+            <p>&copy; 2023 Historias para no dormir. Todos los derechos
+                reservados.</p>
+        </footer>
+
+        <script src="/js/fixFooter.js"></script>
+        <script src="/js/nuevo.js"></script>
+    </body>
+
+</html>

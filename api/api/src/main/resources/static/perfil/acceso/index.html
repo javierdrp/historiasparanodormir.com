@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Historias para no dormir</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/apiFunctions.js"></script>
+        <script src="/js/checkLogin.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Historias para no dormir</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/articulo/index.html">Artículos</a></li>
+                    <li><a href="/perfil/index.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form class="login-form">
+            <label for="login-email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" id="login-email">
+            <br>
+            <label for="login-pass">Contraseña&nbsp;</label>
+            <input type="password" id="login-pass">
+            <br>
+            <button type="button" id="login-button">Entrar</button>
+            <div id="login-error" class="error"></div>
+            <a href="/perfil/nuevo/index.html">Crea una nueva cuenta</a>
+        </form>
+
+        <footer class="fixed-footer">
+            <p>&copy; 2023 Historias para no dormir. Todos los derechos
+                reservados.</p>
+        </footer>
+
+        <script src="/js/fixFooter.js"></script>
+        <script src="/js/acceso.js"></script>
+    </body>
+
+</html>

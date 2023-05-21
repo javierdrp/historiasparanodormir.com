@@ -1,0 +1,234 @@
+#grid-body {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-areas:
+        "header header"
+        "article other"
+        "comment-section comment-section"
+        "footer footer";
+}
+
+body {
+    gap: 7px;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0047a4;
+}
+
+main {
+    padding: 20px;
+}
+
+#articulo {
+    grid-area: article;
+    margin-bottom: 20px;
+}
+
+#article-date {
+    font-size: 0.8em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+#other {
+    grid-area: other;
+}
+
+#comment-section {
+    padding: 20px;
+    grid-area: comment-section;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 75px auto 150px;
+    gap: 7px;
+    padding: 12px;
+}
+
+.comment-date {
+    font-size: 0.8em;
+}
+
+.comment-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-username {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.comment-content {
+    margin-top: 5px;
+}
+
+#my-comment-form {
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 7px;
+    padding: 12px;
+}
+
+#my-comment-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#my-comment-area {
+    width: 80%;
+    height: 5em;
+    resize: none;
+    margin-left: 20px;
+    outline: none;
+}
+
+#my-comment-button {
+    grid-column: 2;
+    width: 60px;
+    margin-left: 20px;
+}
+
+#my-comment-error {
+    grid-column: 2;
+}
+
+.error {
+    color: #7c3a3a;
+    font-size: 0.8rem;
+}
+
+.login-form {
+    padding-top: 10%;
+    text-align: center;
+    line-height: 200%;
+    height: 100%;
+}
+
+.fixed-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#my-profile-section {
+    margin-top: 40px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#my-profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.select-cursor {
+    cursor: pointer;
+}
+
+.select-cursor:hover {
+    color: rgb(85, 85, 148);
+}
+
+#change-username-form {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 200%;
+}
+
+#change-photo-form {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 200%;
+}
+
+#change-pass-form {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 200%;
+}
+
+#admin-form {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 100%;
+}
+
+#admin-title {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#admin-content {
+    width: 60%;
+    height: 40rem;
+    resize: none;
+}
+
+#admin-submit {
+    margin-bottom: 20px;
+}
+
+#latest-articles {
+    line-height: 1.5rem;
+}
